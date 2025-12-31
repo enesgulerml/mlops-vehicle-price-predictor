@@ -1,0 +1,24 @@
+# Python & Environment
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Data
+data/raw/
+data/processed/
+
+# Models
+models/*.pkl
+models/*.npy
+
+# Logs
+logs/
+*.log
+
+# IDE Settings
+.vscode/
+.idea/
+
+# Mac OS junk
+.DS_Store
