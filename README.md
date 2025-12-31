@@ -33,7 +33,7 @@ src/
 ### 2. Installation
 ```bash
 # Clone the repository
-git clone https://github.com/enesgulerml/regression-project.git
+git clone https://github.com/enesgulerml/mlops-vehicle-price-predictor.git
 
 # Create and activate virtual environment
 python -m venv venv
