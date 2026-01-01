@@ -1,7 +1,19 @@
+# Data Processing & Analysis
 pandas
 numpy
 scikit-learn
 matplotlib
 seaborn
+
+# Model
+xgboost
 joblib
-pyyaml
+
+# API & Web
+fastapi
+uvicorn
+pydantic
+requests
+
+# Tools
+# pyyaml

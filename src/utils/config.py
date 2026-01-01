@@ -16,3 +16,8 @@ TARGET_COLUMN = "price"
 DROP_COLS = ['url', 'region_url', 'image_url', 'lat', 'long',
              'vin', 'id', 'county', 'description', 'region', 'posting_date']
 
+MODEL_FEATURES = [
+    'manufacturer', 'model_new', 'condition', 'cylinders', 'fuel',
+    'odometer', 'title_status', 'transmission', 'drive', 'size',
+    'type', 'paint_color', 'state', 'car_age'
+]
