@@ -4,6 +4,7 @@
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost-orange)
 ![MLOps](https://img.shields.io/badge/Architecture-Modular%20Pipeline-green)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![FastAPI](https://img.shields.io/badge/API-FastAPI-009688)
 
 ## 📖 Project Overview
 This project is a production-grade machine learning application designed to predict used vehicle prices based on various features (brand, year, condition, technical specs). 
@@ -25,6 +26,7 @@ mlops-vehicle-price-predictor/
 │   │   ├── data_transformation.py # Feature Eng., Cleaning & Encoding
 │   │   └── model_trainer.py       # XGBoost training & Evaluation
 │   ├── pipelines/       # Orchestration (Training & Prediction)
+│   │   └── prediction_pipeline.py # Inference Logic
 │   └── utils/           # Helper modules (Logging, Config)
 └── requirements.txt     # Dependencies
 ```
@@ -70,6 +72,15 @@ python -m src.components.data_transformation
 ```bash
 python -m src.components.model_trainer
 ```
+
+### 4. Running the API
+Start the FastAPI server:
+
+```bash
+uvicorn src.api.app:app --reload
+```
+Then, open your browser and go to Swagger UI to test predictions interactively: 👉 http://127.0.0.1:8000/docs
+
 
 ## 📈 Model Performance
 * **Current Model:** XGBoost Regressor
